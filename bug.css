@@ -1,0 +1,10 @@
+The following CSS code snippet exhibits unexpected behavior in certain browsers:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+This code intends to make the div elements occupy 50% of the container's width each and align side-by-side. However, if the container's width is not an even multiple of the div's width (50%), the divs might overlap or not display correctly.  The issue stems from the imprecise nature of floating elements and how browsers handle fractional widths.
