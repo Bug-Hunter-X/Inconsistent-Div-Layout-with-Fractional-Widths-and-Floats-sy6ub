@@ -1,0 +1,15 @@
+The following CSS code solves the layout issue using flexbox:
+
+```css
+div {
+  width: 50%;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+```
+
+Flexbox provides more robust control over element alignment and distribution, preventing the layout inconsistencies caused by floating elements with fractional widths.  The `box-sizing: border-box;` ensures consistent sizing irrespective of padding and border.
